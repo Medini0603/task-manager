@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.2.1",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.2",
+    "validator": "^13.11.0"
+  },
+  "name": "4-taskmanager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^3.1.0"
+  }
+}
