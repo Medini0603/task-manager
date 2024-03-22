@@ -23,11 +23,15 @@ test('Should signup a new user',async()=>{
     //few testing ideas
     //Assert that the database was changed correctly
     // use the response body to find if the user exist in db 
+    // the post/users endpoints sends this so responsebody has user and tokens which can be accessed on it 
+    // res.status(201).send({user,token})
     const user=await User.findById(response.body.user._id)
     expect(user).not.toBeNull()
 
     //assertions about the response
     // expect(response.body.user.name).toBe('Radhika')
+    // the post/users endpoints sends this so responsebody has user and tokens which can be accessed on it 
+    // res.status(201).send({user,token})
     expect(response.body).toMatchObject({
         user:{
             name:'Radhika',
