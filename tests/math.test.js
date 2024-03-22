@@ -52,6 +52,6 @@ test("Should add 2 numbers",(done)=>{
 })
 //async await
 test("Should add 2 numbers async/await",async()=>{
-    const sum=await add(3,2)
-    expect(sum).toBe(5)
+    const sum=await add(3,3)
+    expect(sum).toBe(6)
 })
